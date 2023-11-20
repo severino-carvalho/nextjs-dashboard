@@ -3,6 +3,7 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev",
+    "dev:turbo": "next dev --turbo",
     "start": "next start",
     "seed": "node -r dotenv/config ./scripts/seed.js"
   },
