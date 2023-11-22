@@ -1,7 +1,7 @@
-import { Revenue } from '@/app/lib/definitions';
-import { generateYAxis } from '@/app/lib/utils';
-import { lusitana } from '@/app/ui/fonts';
-import { CalendarIcon } from '@heroicons/react/24/outline';
+import { Revenue } from '@/app/lib/definitions'
+import { generateYAxis } from '@/app/lib/utils'
+import { lusitana } from '@/app/ui/fonts'
+import { CalendarIcon } from '@heroicons/react/24/outline'
 
 // This component is representational only.
 // For data visualization UI, check out:
@@ -12,15 +12,15 @@ import { CalendarIcon } from '@heroicons/react/24/outline';
 export default async function RevenueChart({
   revenue,
 }: {
-  revenue: Revenue[];
+  revenue: Revenue[]
 }) {
-  const chartHeight = 350;
+  const chartHeight = 350
   // NOTE: comment in this code when you get to this point in the course
 
-  const { yAxisLabels, topLabel } = generateYAxis(revenue);
+  const { yAxisLabels, topLabel } = generateYAxis(revenue)
 
   if (!revenue || revenue.length === 0) {
-    return <p className="mt-4 text-gray-400">No data available.</p>;
+    return <p className="mt-4 text-gray-400">No data available.</p>
   }
 
   return (
@@ -61,5 +61,5 @@ export default async function RevenueChart({
         </div>
       </div>
     </div>
-  );
+  )
 }
