@@ -4,7 +4,7 @@
     "build": "clear && next build",
     "dev": "clear && next dev --port 3001",
     "dev:turbo": "clear && next dev --turbo --port 3001",
-    "lint": "next lint",
+    "lint": "clear && next lint",
     "start": "clear && next start",
     "seed": "node -r dotenv/config ./scripts/seed.js"
   },
