@@ -1,10 +1,11 @@
 {
   "private": true,
   "scripts": {
-    "build": "next build",
-    "dev": "next dev",
-    "dev:turbo": "next dev --turbo",
-    "start": "next start",
+    "build": "clear && next build",
+    "dev": "clear && next dev --port 3001",
+    "dev:turbo": "clear && next dev --turbo --port 3001",
+    "lint": "next lint",
+    "start": "clear && next start",
     "seed": "node -r dotenv/config ./scripts/seed.js"
   },
   "dependencies": {
