@@ -2,8 +2,8 @@
   "private": true,
   "scripts": {
     "build": "clear && next build",
-    "dev": "clear && next dev --port 3001",
-    "dev:turbo": "clear && next dev --turbo --port 3001",
+    "dev": "clear && next dev",
+    "dev:turbo": "clear && next dev --turbo",
     "lint": "clear && next lint",
     "start": "clear && next start",
     "seed": "node -r dotenv/config ./scripts/seed.js"
@@ -17,6 +17,7 @@
     "bcrypt": "^5.1.1",
     "clsx": "^2.0.0",
     "next": "^14.0.0",
+    "next-auth": "^5.0.0-beta.3",
     "postcss": "8.4.31",
     "react": "18.2.0",
     "react-dom": "18.2.0",
